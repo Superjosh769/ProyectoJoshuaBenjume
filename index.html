@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="Pikachu.png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua's Pokédex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+     
+   <h1 class="titulo">Pokédex Kanto</h1> 
+   <div class="musica">
+   <button onclick="startMusic()">🔊Presiona para escuchar musica de Kanto</button>
+    <audio id="Pokédex" loop>
+        <source src="Pokédex.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio HTML5
+    </audio>
+    <script>
+        function startMusic(){
+            const music = document.getElementById("Pokédex");
+            music.volume = 0.7;
+            music.play();
+        }
+    </script></div>
+    
+   <main class="contenedor_cartas">
+    <article class="card">
+
+        <figure>
+            <img src="Bulbasaur.png" alt="Bulbasaur" class="figure__imgPokemon" height="150px">
+        </figure>
+
+        
+
+        <div class="card_titulos">
+            <p class="card_numero">001</p>
+            <h3 class="card__nombrePokemon">Bulbasaur</h3>  
+        </div>
+
+        <div class="card_titulos">
+            <p class="card_tipoPlanta">Planta</p>
+            <p class="card_tipoVeneno">Veneno</p>
+
+        </div>
+
+        <div class="card_titulos">
+            <p class="peso"> 0,7 m</p>
+            <p class="altura"> 6,9 kg</p>
+            
+        </div>
+
+        <a href="Bulbasaur.html" class="botonBulbasaur">
+            Ir a
+        </a>
+      
+    </article>
+        
+    <!-- <article class="card">
+
+        <figure>
+            <img src="Ivysaur.png" alt="Ivysaur" class="figure__imgPokemon" height="150px">
+        </figure>
+
+        
+
+        <div class="card_titulos">
+            <p class="card_numero">002</p>
+            <h3 class="card__nombrePokemon">Ivysaur</h3>  
+        </div>
+
+        <div class="card_titulos">
+            <p class="card_tipoPlanta">Planta</p>
+            <p class="card_tipoVeneno">Veneno</p>
+
+        </div>
+
+        <div class="card_titulos">
+            <p class="peso"> 1,0 m</p>
+            <p class="altura"> 13,0 kg</p>
+            
+        </div>
+
+        <a href="Ivysaur.html" class="botonIvysaur">
+            Ir a
+        </a>
+      
+    </article> -->
+
+    <!-- <article class="card">
+
+        <figure>
+            <img src="Venusaur.png" alt="Venusaur" class="figure__imgPokemon" height="150px">
+        </figure>
+
+        
+
+        <div class="card_titulos">
+            <p class="card_numero">003</p>
+            <h3 class="card__nombrePokemon">Venusaur</h3>  
+        </div>
+
+        <div class="card_titulos">
+            <p class="card_tipoPlanta">Planta</p>
+            <p class="card_tipoVeneno">Veneno</p>
+
+        </div>
+
+        <div class="card_titulos">
+            <p class="peso"> 2,0 m</p>
+            <p class="altura"> 100,0 kg</p>
+            
+        </div>
+
+        <a href="Venusaur.html" class="botonIvysaur">
+            Ir a
+        </a>
+       -->
+    </article>
+
+    <article class="card">
+
+        <figure>
+            <img src="Charmander.png" alt="Charmander" class="figure__imgPokemon" height="150px">
+        </figure>
+
+        <div class="card_titulos">
+            <p class="card_numero">004</p>
+            <h3 class="card__nombrePokemon">Charmander</h3>  
+        </div>
+
+        <div class="card_titulos">
+            <p class="card_tipoFuego">Fuego</p>
+    
+
+        </div>
+
+        <div class="card_titulos">
+            <p class="peso"> 0,6 m</p>
+            <p class="altura"> 8,5 kg</p>
+            
+        </div>
+
+        <a href="Charmander.html" class="botonCharmander">
+            Ir a
+        </a>
+    </article>
+
+    <!-- <article class="card">
+
+        <figure>
+            <img src="Charmeleon.png" alt="Charmeleon" class="figure__imgPokemon" height="150px">
+        </figure>
+
+        <div class="card_titulos">
+            <p class="card_numero">005</p>
+            <h3 class="card__nombrePokemon">Charmeleon</h3>  
+        </div>
+
+        <div class="card_titulos">
+            <p class="card_tipoFuego">Fuego</p>
+    
+
+        </div>
+
+        <div class="card_titulos">
+            <p class="peso"> 1,1 m</p>
+            <p class="altura"> 19,0 kg</p>
+            
+        </div>
+
+        <a href="Charmeleon.html" class="botonCharmeleon">
+            Ir a
+        </a>
+    </article> -->
+
+    <article class="card">
+
+        <figure>
+            <img src="Charizard.png" alt="Charizard" class="figure__imgPokemon" width="150px" height="150px">
+        </figure>
+
+        <div class="card_titulos">
+            <p class="card_numero">006</p>
+            <h3 class="card__nombrePokemon">Charizard</h3>  
+        </div>
+
+        <div class="card_titulos">
+            <p class="card_tipoFuego">Fuego</p>
+            <p class="card_tipoVolador">Volador</p>
+
+        </div>
+
+        <div class="card_titulos">
+            <p class="peso"> 1,7 m</p>
+            <p class="altura"> 90,5 kg</p>
+            
+        </div>
+        <a href="Charizard.html" class="botonCharizard">
+            Ir a
+        </a>
+    </article>
+
+    <!-- <article class="card">
+
+        <figure>
+            <img src="Squirtle.png" alt="Squirtle" class="figure__imgPokemon"  height="150px">
+        </figure>
+
+        <div class="card_titulos">
+            <p class="card_numero">007</p>
+            <h3 class="card__nombrePokemon">Squirtle</h3>  
+        </div>
+
+        <div class="card_titulos">
+            <p class="card_tipoAgua">Agua</p>
+          
+
+        </div>
+
+        <div class="card_titulos">
+            <p class="peso"> 0,5 m</p>
+            <p class="altura"> 9,0 kg</p>
+            
+        </div>
+        <a href="Squirtle.html" class="botonSquirtle">
+            Ir a
+        </a>
+    </article>
+
+    <article class="card">
+
+        <figure>
+            <img src="Wartortle.png" alt="Wartortle" class="figure__imgPokemon"  height="150px">
+        </figure>
+
+        <div class="card_titulos">
+            <p class="card_numero">008</p>
+            <h3 class="card__nombrePokemon">Wartortle</h3>  
+        </div>
+
+        <div class="card_titulos">
+            <p class="card_tipoAgua">Agua</p>
+          
+
+        </div>
+
+        <div class="card_titulos">
+            <p class="peso"> 1,0 m</p>
+            <p class="altura"> 22,5 kg</p>
+            
+        </div>
+        <a href="Wartortle.html" class="botonWartortle">
+            Ir a
+        </a>
+    </article>
+
+    <article class="card">
+
+        <figure>
+            <img src="Blastoise.png" alt="Blastoise" class="figure__imgPokemon"  height="150px">
+        </figure>
+
+        <div class="card_titulos">
+            <p class="card_numero">009</p>
+            <h3 class="card__nombrePokemon">Blastoise</h3>  
+        </div>
+
+        <div class="card_titulos">
+            <p class="card_tipoAgua">Agua</p>
+          
+
+        </div>
+
+        <div class="card_titulos">
+            <p class="peso"> 1,6 m</p>
+            <p class="altura"> 85,5 kg</p>
+            
+        </div>
+        <a href="Blastoise.html" class="botonBlastoise">
+            Ir a
+        </a>
+    </article> -->
+
+  <article class="card">
+
+        <figure>
+            <img src="Pikachu.png" alt="Pikachu" class="figure__imgPokemon"  height="150px">
+        </figure>
+
+        <div class="card_titulos">
+            <p class="card_numero">0025</p>
+            <h3 class="card__nombrePokemon">Pikachu</h3>  
+        </div>
+
+        <div class="card_titulos">
+            <p class="card_tipoEléctrico">Eléctrico</p>
+          
+
+        </div>
+
+        <div class="card_titulos">
+            <p class="peso"> 0,4 m</p>
+            <p class="altura"> 6,0 kg</p>
+            
+        </div>
+        <a href="Pikachu.html" class="botonPikachu">
+            Ir a
+        </a>
+    </article>
+
+     <article class="card">
+
+        <figure>
+            <img src="Mewtwo.png" alt="Mewtwo" class="figure__imgPokemon"  height="150px">
+        </figure>
+
+        <div class="card_titulos">
+            <p class="card_numero">0150</p>
+            <h3 class="card__nombrePokemon">Mewtwo</h3>  
+        </div>
+
+        <div class="card_titulos">
+            <p class="card_tipoPsíquico">Psíquico</p>
+          
+
+        </div>
+
+        <div class="card_titulos">
+            <p class="peso"> 2,0 m</p>
+            <p class="altura"> 122,0 kg</p>
+            
+        </div>
+        <a href="Mewtwo.html" class="botonMewtwo">
+            Ir a
+        </a>
+    </article>
+
+
+    <article class="card">
+
+        <figure>
+            <img src="Umbreon.png" alt="Umbreon" class="figure__imgPokemon"  height="150px">
+        </figure>
+
+        <div class="card_titulos">
+            <p class="card_numero">0197</p>
+            <h3 class="card__nombrePokemon">Umbreon</h3>  
+        </div>
+
+        <div class="card_titulos">
+            <p class="card_tipoSiniestro">Siniestro</p>
+            
+
+        </div>
+
+        <div class="card_titulos">
+            <p class="peso"> 1,0 m</p>
+            <p class="altura"> 27,0 kg</p>
+            
+        </div>
+        <a href="Umbreon.html" class="botonUmbreon">
+            Ir a
+        </a>
+    </article>
+
+      <!-- <article class="card">
+
+        <figure>
+            <img src="Tyranitar.png" alt="Tyranitar" class="figure__imgPokemon"  height="150px">
+        </figure>
+
+        <div class="card_titulos">
+            <p class="card_numero">0248</p>
+            <h3 class="card__nombrePokemon">Tyranitar</h3>  
+        </div>
+
+        <div class="card_titulos">
+            <p class="card_tipoRoca">Roca</p>
+            <p class="card_tipoSiniestro">Siniestro</p>
+          
+
+        </div>
+
+        <div class="card_titulos">
+            <p class="peso"> 2,0 m</p>
+            <p class="altura"> 202,0 kg</p>
+            
+        </div>
+        <a href="Tyranitar.html" class="botonTyranitar">
+            Ir a
+        </a>
+    </article>
+   
+    <article class="card">
+
+        <figure>
+            <img src="Lugia.png" alt="Lugia" class="figure__imgPokemon"  height="150px">
+        </figure>
+
+        <div class="card_titulos">
+            <p class="card_numero">0249</p>
+            <h3 class="card__nombrePokemon">Lugia</h3>  
+        </div>
+
+        <div class="card_titulos">
+            <p class="card_tipoPsíquico">Psíquico</p>
+            <p class="card_tipoVolador">Volador</p>
+          
+
+        </div>
+
+        <div class="card_titulos">
+            <p class="peso"> 5,2 m</p>
+            <p class="altura"> 216,0 kg</p>
+            
+        </div>
+        <a href="Lugia.html" class="botonLugia">
+            Ir a
+        </a>
+    </article>
+
+    <article class="card">
+
+        <figure>
+            <img src="Ho-Oh.png" alt="Ho-Oh" class="figure__imgPokemon"  height="150px">
+        </figure>
+
+        <div class="card_titulos">
+            <p class="card_numero">0250</p>
+            <h3 class="card__nombrePokemon">Ho-Oh</h3>  
+        </div>
+
+        <div class="card_titulos">
+            <p class="card_tipoFuego">Fuego</p>
+            <p class="card_tipoVolador">Volador</p>
+          
+
+        </div>
+
+        <div class="card_titulos">
+            <p class="peso"> 3,8 m</p>
+            <p class="altura"> 199,0 kg</p>
+            
+        </div>
+        <a href="Ho-Oh.html" class="botonHo-Oh">
+            Ir a
+        </a>
+    </article>
+
+    <article class="card">
+
+        <figure>
+            <img src="Kyogre.png" alt="Kyogre" class="figure__imgPokemon"  height="150px">
+        </figure>
+
+        <div class="card_titulos">
+            <p class="card_numero">0382</p>
+            <h3 class="card__nombrePokemon">Kyogre</h3>  
+        </div>
+
+        <div class="card_titulos">
+            <p class="card_tipoAgua">Agua</p>
+          
+
+        </div>
+
+        <div class="card_titulos">
+            <p class="peso"> 4,5 m</p>
+            <p class="altura"> 352,0 kg</p>
+            
+        </div>
+        <a href="Kyogre.html" class="botonKyogre">
+            Ir a
+        </a>
+    </article>
+
+    <article class="card">
+
+        <figure>
+            <img src="Dialga.png" alt="Dialga" class="figure__imgPokemon"  height="150px">
+        </figure>
+
+        <div class="card_titulos">
+            <p class="card_numero">0483</p>
+            <h3 class="card__nombrePokemon">Dialga</h3>  
+        </div>
+
+        <div class="card_titulos">
+            <p class="card_tipoAcero">Acero</p>
+            <p class="card_tipoDragón">Dragón</p>
+          
+
+        </div>
+
+        <div class="card_titulos">
+            <p class="peso"> 5,4 m</p>
+            <p class="altura"> 683,0 kg</p>
+            
+        </div>
+        <a href="Dialga.html" class="botonDialga">
+            Ir a
+        </a>
+    </article>
+
+    <article class="card">
+
+        <figure>
+            <img src="Palkia.png" alt="Palkia" class="figure__imgPokemon"  height="150px">
+        </figure>
+
+        <div class="card_titulos">
+            <p class="card_numero">0484</p>
+            <h3 class="card__nombrePokemon">Palkia</h3>  
+        </div>
+
+        <div class="card_titulos">
+            <p class="card_tipoAgua">Agua</p>
+            <p class="card_tipoDragón">Dragón</p>
+          
+
+        </div>
+
+        <div class="card_titulos">
+            <p class="peso"> 4,2 m</p>
+            <p class="altura"> 336,0 kg</p>
+            
+        </div>
+        <a href="Palkia.html" class="botonPalkia">
+            Ir a
+        </a>
+    </article>
+
+    <article class="card">
+
+        <figure>
+            <img src="Regigigas.png" alt="Regigigas" class="figure__imgPokemon"  height="150px">
+        </figure>
+
+        <div class="card_titulos">
+            <p class="card_numero">0486</p>
+            <h3 class="card__nombrePokemon">Regigigas</h3>  
+        </div>
+
+        <div class="card_titulos">
+            <p class="card_tipoNormal">Normal</p>
+          
+          
+
+        </div>
+
+        <div class="card_titulos">
+            <p class="peso"> 3,7 m</p>
+            <p class="altura"> 420,0 kg</p>
+            
+        </div>
+        <a href="Regigigas.html" class="botonRegigigas">
+            Ir a
+        </a>
+    </article>
+
+    <article class="card">
+        <figure>
+            <img src="Giratina.png" alt="Giratina" class="figure__imgPokemon"  height="150px">
+        </figure>
+
+        <div class="card_titulos">
+            <p class="card_numero">0487</p>
+            <h3 class="card__nombrePokemon">Giratina</h3>  
+        </div>
+
+        <div class="card_titulos">
+            <p class="card_tipoFantasma">Fantasma</p>
+            <p class="card_tipoDragón">Dragón</p>
+          
+        </div>
+
+        <div class="card_titulos">
+            <p class="peso"> 4,5 m</p>
+            <p class="altura"> 750,0 kg</p>
+            
+        </div>
+        <a href="Giratina.html" class="botonGiratina">
+            Ir a
+        </a>
+    </article>
+
+    <article class="card">
+        <figure>
+            <img src="Arceus.png" alt="Arceus" class="figure__imgPokemon"  height="150px">
+        </figure>
+
+        <div class="card_titulos">
+            <p class="card_numero">0493</p>
+            <h3 class="card__nombrePokemon">Arceus</h3>  
+        </div>
+
+        <div class="card_titulos">
+            <p class="card_tipoNormal">Normal</p>
+           
+          
+        </div>
+
+        <div class="card_titulos">
+            <p class="peso"> 3,2 m</p>
+            <p class="altura"> 320,0 kg</p>
+            
+        </div>
+        <a href="Arceus.html" class="botonArceus">
+            Ir a
+        </a>
+    </article> --> 
+
+    </main> 
+    <footer>
+        <h4 class="footer__piePagina">Hecho por Joshua Benjumé</h4>
+    </footer>
+
+    <audio id="beep-sound" src="mouse-click-117076.mp3" preload="auto"></audio>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            const cards = document.querySelectorAll(".card");
+            const beep = document.getElementById("beep-sound");
+
+            cards.forEach(card => {
+                card.addEventListener("click", () =>{
+                    beep.currentTime= 0;
+                    beep.play();
+                });
+            
+            });
+        });
+    </script>
+</body>
+</html> 

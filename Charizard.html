@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Charizard.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charizard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+     <link rel="icon" href="Charizard.png">
+
+
+</head>
+<body>
+
+   <h1 class="titulo">Charizard</h1>
+ <div class="musica">
+   <button onclick="startMusic()">🔊Presiona para escuchar musica de Kanto</button>
+    <audio id="Pokédex" loop>
+        <source src="Pokédex.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio HTML5
+    </audio>
+    <script>
+        function startMusic(){
+            const music = document.getElementById("Pokédex");
+            music.volume = 0.7;
+            music.play();
+        }
+    </script></div>
+   <main class="contenedor_pokemon">
+    <article class="card">
+
+   <figure class="imagen">
+    <img src="Charizard.png" alt="Charizard" class="imagen_pokemon" height="400px" width="400px">
+   </figure>
+
+   <p class="pie"><b>Imagen de Referencia</b></p>
+</article>
+
+    <article class="contenedor_informacion">
+    <p class="info">Charizard es un Pokémon de tipo Fuego/Volador que evoluciona de Charmeleon y es la evolución final de Charmander. Es conocido por su habilidad para volar alto, escupir fuego y su impresionante poder de fuego.   </p>
+</article>
+</main>
+<div class="caracteristicas-debilidades">
+    <article class="contenedor_info_extra">
+        <h2 class="subtitulo">CARACTERÍSTICAS</h2>
+    
+        <ul class="lista">
+            <li>Tipo: <img src="Icon_TipoFuego.webp" height="7%" width="7%"> <img src="Icon_TipoVolador.webp" height="7%" width="7%"></li>
+            <li>Peso: 90.5 kg</li>
+            <li>Altura: 1.7 m</li>
+            <li>Hábitat: Montañas, zonas rocosas y a gran altura</li>
+            <li>Región: Kanto</li>
+        </ul>
+    </article>
+    <article class="contenedor_info_extra">
+        <h2 class="subtitulo">DÉBIL CONTRA</h2>
+        <ul class="lista">
+        <li><img src="Icon_TipoRoca.webp" height="10%" width="10%"> <img src="Icon_TipoAgua.webp" height="10%" width="10%"> <img src="Icon_TipoEléctrico.webp" height="10%" width="10%"></li>
+        </ul>
+
+    </article>
+</div>
+
+<div class="imagenes_cartas">
+
+<img class="imagen_carta" src="Charizard1.png"> 
+<img class="imagen_carta" src="Charizard2.png"> 
+<img class="imagen_carta" src="Charizard3.png">
+<img class="imagen_carta" src="Charizard4.png">
+<img class="imagen_carta" src="Charizard5.png">
+
+
+
+</div>
+
+<a href="index.html" class="boton-regresar">VOLVER A LA POKÉDEX</a>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Mewtwo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mewtwo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+     <link rel="icon" href="Mewtwo.png">
+
+
+</head>
+<body>
+
+   <h1 class="titulo">Mewtwo</h1>
+     <div class="musica">
+   <button onclick="startMusic()">🔊Presiona para escuchar musica de Kanto</button>
+    <audio id="Pokédex" loop>
+        <source src="Pokédex.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio HTML5
+    </audio>
+    <script>
+        function startMusic(){
+            const music = document.getElementById("Pokédex");
+            music.volume = 0.7;
+            music.play();
+        }
+    </script></div>
+   <main class="contenedor_pokemon">
+    <article class="card">
+
+   <figure class="imagen">
+    <img src="Mewtwo.png" alt="Mewtwo" class="imagen_pokemon" height="400px" width="400px">
+   </figure>
+
+   <p class="pie"><b>Imagen de Referencia</b></p>
+</article>
+
+    <article class="contenedor_informacion">
+    <p class="info">Mewtwo es un Pokémon de tipo psíquico, creado genéticamente a partir de la recombinación del ADN de Mew. Es conocido por su gran poder psíquico, su fuerza física y su naturaleza colérica. Es un Pokémon legendario y uno de los más poderosos en la serie. </p>
+</article>
+</main>
+<div class="caracteristicas-debilidades">
+    <article class="contenedor_info_extra">
+        <h2 class="subtitulo">CARACTERÍSTICAS</h2>
+    
+        <ul class="lista">
+            <li>Tipo: <img src="Icon_TipoPsíquico.webp" height="10%" width="10%"></li>
+            <li>Peso: 122.0 kg</li>
+            <li>Altura: 2.0 m</li>
+            <li>Hábitat: Creado genéticamente, no tiene hábitat natural</li>
+            <li>Región: Kanto</li>
+        </ul>
+    </article>
+    <article class="contenedor_info_extra">
+        <h2 class="subtitulo">DÉBIL CONTRA</h2>
+        <ul class="lista">
+            <li><img src="Icon_TipoBicho.webp" height="10%" width="10%"> <img src="Icon_TipoFantasma.webp" height="10%" width="10%">
+           <img src="Icon_TipoSiniestro.webp" height="10%" width="10%"> </li>
+        </li>
+            </ul>
+
+    </article>
+</div>
+
+<div class="imagenes_cartas">
+
+<img class="imagen_carta" src="Mewtwo1.png"> 
+<img class="imagen_carta" src="Mewtwo2.png"> 
+<img class="imagen_carta" src="Mewtwo3.png">
+<img class="imagen_carta" src="Mewtwo4.png">
+<img class="imagen_carta" src="Mewtwo5.png">
+
+
+
+</div>
+
+<a href="index.html" class="boton-regresar">VOLVER A LA POKÉDEX</a>
+</body>
+</html>

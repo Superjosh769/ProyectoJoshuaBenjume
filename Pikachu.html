@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Pikachu.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pikachu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+     <link rel="icon" href="Pikachu.png">
+
+
+</head>
+<body>
+
+   <h1 class="titulo">Pikachu</h1>
+   <div class="musica">
+   <button onclick="startMusic()">🔊Presiona para escuchar musica de Kanto</button>
+    <audio id="Pokédex" loop>
+        <source src="Pokédex.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio HTML5
+    </audio>
+    <script>
+        function startMusic(){
+            const music = document.getElementById("Pokédex");
+            music.volume = 0.7;
+            music.play();
+        }
+    </script></div>
+   <main class="contenedor_pokemon">
+    <article class="card">
+
+   <figure class="imagen">
+    <img src="Pikachu.png" alt="Pikachu" class="imagen_pokemon" height="400px" width="400px">
+   </figure>
+
+   <p class="pie"><b>Imagen de Referencia</b></p>
+</article>
+
+    <article class="contenedor_informacion">
+    <p class="info">Pikachu es un Pokémon eléctrico muy popular, que se caracteriza por su pelaje amarillo, orejas puntiagudas con puntas negras, mejillas rojas y cola en forma de rayo. Es un roedor pequeño con una altura de 0,4 metros y tiene la capacidad de almacenar y descargar energía eléctrica.    </p>
+</article>
+</main>
+<div class="caracteristicas-debilidades">
+    <article class="contenedor_info_extra">
+        <h2 class="subtitulo">CARACTERÍSTICAS</h2>
+    
+        <ul class="lista">
+            <li>Tipo: <img src="Icon_TipoEléctrico.webp" height="10%" width="10%">
+            </li>
+            <li>Peso: 6.0 kg</li>
+            <li>Altura: 0.4 m</li>
+            <li>Hábitat: Bosques, casas, planicies y cerca de fuentes eléctricas</li>
+            <li>Región: Kanto</li>
+        </ul>
+    </article>
+    <article class="contenedor_info_extra">
+        <h2 class="subtitulo">DÉBIL CONTRA</h2>
+        <ul class="lista">
+            <li> <img src="Icon_TipoTierra.webp" width="10%" height="10%"></li>
+        </ul>
+
+    </article>
+</div>
+
+<div class="imagenes_cartas">
+
+<img class="imagen_carta" src="Pikachu1.png"> 
+<img class="imagen_carta" src="Pikachu2.png"> 
+<img class="imagen_carta" src="Pikachu3.png">
+<img class="imagen_carta" src="Pikachu4.png">
+<img class="imagen_carta" src="Pikachu5.png">
+
+
+
+</div>
+
+<a href="index.html" class="boton-regresar">VOLVER A LA POKÉDEX</a>
+</body>
+</html>

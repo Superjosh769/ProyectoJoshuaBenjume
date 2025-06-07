@@ -1,0 +1,659 @@
+@media screen and (max-width: 760px){
+.contenedor_cartas{
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+@media screen and (max-width: 480px){
+.contenedor_cartas{
+    grid-template-columns: 1fr;
+}
+}
+    
+
+    
+
+
+*{
+    margin: 0;
+}
+
+.musica{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+body{
+    background-color: rgb(162, 160, 182);
+    height: 100vh;
+    font-family: 'Press Start 2P', sans-serif;
+    background: #2c2c3e;
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, #3c3b52, #252233);
+
+
+}
+.card{
+    background-color: #f8f8f8;
+    border: rgb(48, 48, 55) 3px solid;
+    width: 100%;
+    max-width: 280px;
+    height: 340px;
+    text-align: center;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-top: 8px solid #e53935;
+    transition: transform 0.2 ease, box-shadow 0.2s ease;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+
+.rojo{background: red;}
+.verde{background: green;}
+.azul{background: blue;}
+
+.card::before{
+content: "";
+display: block;
+background: linear-gradient(to right, #ff5252, #c62828);
+height: 12px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+margin: -16px -16px 8px -16px;
+box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+
+
+.botonBulbasaur{
+    padding: 5px 10px;
+    background-color: rgba(30, 158, 56, 0.7);
+    color: white;
+    text-decoration: none;
+    border:4px solid green;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0 5px 0;
+
+
+}
+
+.botonBulbasaur:hover{
+    background-color: chartreuse;
+}
+
+.botonIvysaur{
+    padding: 5px 10px;
+    background-color: rgba(30, 158, 56, 0.7);
+    color: white;
+    text-decoration: none;
+    border:4px solid green;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0 5px 0;
+
+
+}
+
+.botonIvysaur:hover{
+    background-color: chartreuse;
+}
+
+.botonVenusaur{
+    padding: 5px 10px;
+    background-color: rgba(30, 158, 56, 0.7);
+    color: white;
+    text-decoration: none;
+    border:4px solid green;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0 5px 0;
+
+
+}
+
+.botonVenusaur:hover{
+    background-color: chartreuse;
+}
+
+.botonCharmander{
+    padding: 5px 10px;
+    background-color: rgb(222, 21, 21);
+    color: white;
+    text-decoration: none;
+    border:4px solid rgb(107, 3, 3);
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0 5px 0;
+
+
+}
+
+.botonCharmander:hover{
+    background-color: rgb(103, 10, 10);
+}
+
+.botonCharmeleon{
+    padding: 5px 10px;
+    background-color: rgb(222, 21, 21);
+    color: white;
+    text-decoration: none;
+    border:4px solid rgb(107, 3, 3);
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0 5px 0;
+
+
+}
+
+.botonCharmeleon:hover{
+    background-color: rgb(103, 10, 10);
+}
+
+.botonSquirtle{
+    padding: 5px 10px;
+    background-color: rgb(41, 128, 239);
+    color: white;
+    text-decoration: none;
+    border:4px solid rgb(26, 79, 149);
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0 5px 0;
+
+
+}
+
+.botonSquirtle:hover{
+    background-color: rgb(26, 79, 149);
+}
+
+.botonWartortle{
+    padding: 5px 10px;
+    background-color: rgb(41, 128, 239);
+    color: white;
+    text-decoration: none;
+    border:4px solid rgb(26, 79, 149);
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0 5px 0;
+
+
+}
+
+.botonWartortle:hover{
+    background-color: rgb(26, 79, 149);
+}
+
+.botonBlastoise{
+    padding: 5px 10px;
+    background-color: rgb(41, 128, 239);
+    color: white;
+    text-decoration: none;
+    border:4px solid rgb(26, 79, 149);
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0 5px 0;
+
+
+}
+
+.botonBlastoise:hover{
+    background-color: rgb(26, 79, 149);
+}
+
+.botonCharizard{
+    padding: 5px 10px;
+    background-color: rgb(222, 21, 21);
+    color: white;
+    text-decoration: none;
+    border:4px solid rgb(107, 3, 3);
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0 5px 0;
+
+
+}
+
+.botonCharizard:hover{
+    background-color: rgb(103, 10, 10);
+}
+
+.botonMewtwo{
+    padding: 5px 10px;
+    background-color: rgb(215, 21, 222);
+    color: white;
+    text-decoration: none;
+    border:4px solid rgb(107, 3, 102);
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0 5px 0;
+
+
+}
+
+.botonMewtwo:hover{
+    background-color: rgb(29, 28, 28);
+}
+
+.botonUmbreon{
+    padding: 5px 10px;
+    background-color: rgb(30, 29, 30);
+    color: white;
+    text-decoration: none;
+    border:4px solid rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0 5px 0;
+
+
+}
+
+.botonUmbreon:hover{
+    background-color: rgb(32, 25, 32);
+}
+
+.botonPikachu{
+    padding: 5px 10px;
+    background-color: rgb(234, 234, 10);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border:4px solid rgb(171, 168, 11);
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0 5px 0;
+
+
+}
+
+.botonPikachu:hover{
+    background-color: rgb(176, 176, 21);
+}
+
+.botonTyranitar{
+    padding: 5px 10px;
+    background-color: rgb(113, 149, 111);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border:4px solid rgb(66, 88, 74);
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0 5px 0;
+
+
+}
+
+.botonTyranitar:hover{
+    background-color: rgb(66, 88, 74);
+}
+
+.botonLugia{
+    padding: 5px 10px;
+    background-color: rgb(116, 141, 199);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border:4px solid rgb(21, 96, 167);
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0 5px 0;
+
+
+}
+
+.botonLugia:hover{
+    background-color: rgb(21, 96, 167);
+}
+
+.botonHo-Oh{
+    padding: 5px 10px;
+    background-color: rgb(197, 32, 32);
+    color: whitesmoke;
+    text-decoration: none;
+    border:4px solid rgb(80, 180, 29);
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0 5px 0;
+
+
+}
+
+.botonHo-Oh:hover{
+    background-color: rgb(80, 180, 29);
+}
+
+.botonDialga{
+    padding: 5px 10px;
+    background-color: rgb(55, 78, 172);
+    color: whitesmoke;
+    text-decoration: none;
+    border:4px solid rgb(59, 181, 233);
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0 5px 0;
+
+
+}
+
+.botonDialga:hover{
+    background-color: rgb(59, 181, 233);
+}
+
+.botonPalkia{
+    padding: 5px 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border:4px solid rgb(161, 54, 171);
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0 5px 0;
+
+
+}
+
+.botonPalkia:hover{
+    background-color: rgb(161, 54, 171);
+}
+
+.botonRegigigas{
+    padding: 5px 10px;
+    background-color: rgb(22, 224, 96);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border:4px solid rgb(235, 235, 28);
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0 5px 0;
+
+
+}
+
+.botonRegigigas:hover{
+    background-color: rgb(235, 235, 28);
+}
+
+.botonGiratina{
+    padding: 5px 10px;
+    background-color: rgb(235, 235, 28);
+    color: black;
+    text-decoration: none;
+    border:4px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0 5px 0;
+
+
+}
+
+.botonGiratina:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+.botonArceus{
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border:4px solid rgb(235, 235, 28);
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0 5px 0;
+
+
+}
+
+.botonArceus:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.botonKyogre{
+    padding: 5px 10px;
+    background-color: rgb(22, 28, 226);
+    color: whitesmoke;
+    text-decoration: none;
+    border:4px solid rgb(235, 28, 28);
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0 5px 0;
+
+
+}
+
+.botonKyogre:hover{
+    background-color: rgb(235, 28, 28);
+}
+
+
+.card:hover{
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.titulo{
+   font-size: 3rem;
+    color: #f1f1f1;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+
+}
+.figure__imgPokemon{
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer__piePagina{
+    text-align: center;
+}
+
+.card__nombrePokemon{
+    color: #000;
+}
+
+.card_tipoPlanta{
+    background-color: rgb(63, 161, 41);
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+    width: 100px;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+.card_tipoVeneno{
+    background-color: rgb(145, 65, 203);
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+    width: 100px;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+.peso, .altura {
+    margin: 10px 5px 25px 0;
+    background-color: rgb(173, 173, 173);
+    width: 130px;
+    height: 25px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.contenedor_cartas{
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: center;
+    gap: 24px;
+    padding: 20px;
+    align-items: center;
+    align-content: center;
+
+    
+
+}
+.card_numero{
+    color: #000;
+}
+
+.card_titulos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_tipoFuego{
+    background-color: rgb(230, 40, 41);
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+    width: 100px;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+.card_tipoVolador{
+    background-color: rgb(129, 185, 239);
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+    width: fit-content;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.card_tipoEléctrico{
+    background-color: rgb(250, 192, 0);
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+    width: 150px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.card_tipoPsíquico{
+    background-color: rgb(239, 65, 121);
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+    width: 130px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.card_tipoSiniestro{
+    background-color: rgb(80, 65, 63);
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+    width: 140px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+} 
+
+.card_tipoAgua{
+    background-color: rgb(41, 128, 239);
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+    color: whitesmoke;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.card_tipoRoca{
+    background-color: rgb(179, 169, 129);
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.card_tipoHielo{
+    background-color: rgb(63, 216, 255);
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+    width: fit-content;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.card_tipoTierra{
+    background-color: rgb(145, 81, 33);
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+    width: fit-content;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+.card_tipoBicho{
+    background-color: rgb(145, 161, 25);
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+    width: fit-content;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+} 
+
+.card_tipoFantasma{
+    background-color: rgb(112, 65, 112);
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+    width: fit-content;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+} 
+
+.card_tipoLucha{
+    background-color: rgb(255, 128, 0);
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+    width: fit-content;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+} 
+
+.card_tipoHada{
+    background-color: rgb(239, 112, 239);
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+    width: fit-content;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+} 
+
+.card_tipoAcero{
+    background-color: rgb(96, 161, 184);
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+    width: 100px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.card_tipoDragón{
+    background-color: rgb(80, 96, 225);
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+    width: 100px;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+.card_tipoNormal{
+    background-color: rgb(159, 161, 159);
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+    width: 100px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.musica{
+    display: flex;
+}

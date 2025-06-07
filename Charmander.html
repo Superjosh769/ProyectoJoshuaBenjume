@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Charmander.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charmander</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+     <link rel="icon" href="Charmander.png">
+
+
+</head>
+<body>
+
+   <h1 class="titulo">Charmander</h1>
+      <div class="musica">
+   <button onclick="startMusic()">🔊Presiona para escuchar musica de Kanto</button>
+    <audio id="Pokédex" loop>
+        <source src="Pokédex.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio HTML5
+    </audio>
+    <script>
+        function startMusic(){
+            const music = document.getElementById("Pokédex");
+            music.volume = 0.7;
+            music.play();
+        }
+    </script></div>
+   <main class="contenedor_pokemon">
+    <article class="card">
+
+   <figure class="imagen">
+    <img src="Charmander.png" alt="Charmander" class="imagen_pokemon" height="400px" width="400px">
+   </figure>
+
+   <p class="pie"><b>Imagen de Referencia</b></p>
+</article>
+
+    <article class="contenedor_informacion">
+    <p class="info">Charmander es un Pokémon bípedo pequeño, de tipo Fuego, parecido a un lagarto, con un cuerpo naranja y una cola con una llama en la punta. Tiene ojos azules, una barriga amarilla y patas con garras de tres dedos. Es conocido por su llama, que indica su estado de ánimo y vitalidad, siendo un indicador de su salud y fortaleza.  </p>
+</article>
+</main>
+<div class="caracteristicas-debilidades">
+    <article class="contenedor_info_extra">
+        <h2 class="subtitulo">CARACTERÍSTICAS</h2>
+    
+        <ul class="lista">
+            <li>Tipo: <img src="Icon_TipoFuego.webp" height="7%" width="7%"></li>
+            <li>Peso: 8.5 kg</li>
+            <li>Altura: 0.6 m</li>
+            <li>Hábitat: Lugares Cálidos</li>
+            <li>Región: Kanto</li>
+        </ul>
+    </article>
+    <article class="contenedor_info_extra">
+        <h2 class="subtitulo">DÉBIL CONTRA</h2>
+        <ul class="lista">
+            <li><img src="Icon_TipoAgua.webp" height="10%" width="10%"> <img src="Icon_TipoTierra.webp" height="10%" width="10%"> <img src="Icon_TipoRoca.webp" height="10%" width="10%"></li>
+
+        </ul>
+
+    </article>
+</div>
+<div class="imagenes_cartas">
+
+<img class="imagen_carta" src="Charmander1.png"> 
+<img class="imagen_carta" src="Charmander2.png"> 
+<img class="imagen_carta" src="Charmander3.png">
+<img class="imagen_carta" src="Charmander4.png">
+<img class="imagen_carta" src="Charmander5.png">
+
+
+
+</div>
+
+<a href="index.html" class="boton-regresar">VOLVER A LA POKÉDEX</a>
+</body>
+</html>

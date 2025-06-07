@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Umbreon.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umbreon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+     <link rel="icon" href="Umbreon.png">
+
+
+</head>
+<body>
+
+   <h1 class="titulo">Umbreon</h1>
+   <div class="musica">
+   <button onclick="startMusic()">🔊Presiona para escuchar musica de Kanto</button>
+    <audio id="Pokédex" loop>
+        <source src="Pokédex.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio HTML5
+    </audio>
+    <script>
+        function startMusic(){
+            const music = document.getElementById("Pokédex");
+            music.volume = 0.7;
+            music.play();
+        }
+    </script></div>
+   <main class="contenedor_pokemon">
+    <article class="card">
+
+   <figure class="imagen">
+    <img src="Umbreon.png" alt="Umbreon" class="imagen_pokemon" height="400px" width="400px">
+   </figure>
+
+   <p class="pie"><b>Imagen de Referencia</b></p>
+</article>
+
+    <article class="contenedor_informacion">
+    <p class="info">Umbreon es un Pokémon de tipo Siniestro de la región de Johto, conocido por su pelaje negro brillante y los anillos amarillos que brillan en la oscuridad. Es la evolución de Eevee y se destaca por su aspecto similar a un gato o un zorro, con orejas largas y puntiagudas, ojos rojos y una cola espesa.     </p>
+</article>
+</main>
+<div class="caracteristicas-debilidades">
+    <article class="contenedor_info_extra">
+        <h2 class="subtitulo">CARACTERÍSTICAS</h2>
+    
+        <ul class="lista">
+            <li>Tipo: <img src="Icon_TipoSiniestro.webp" height="10%" width="10%"></li>
+            <li>Peso: 27.0 kg</li>
+            <li>Altura: 1.0 m</li>
+            <li>Hábitat: Bosques densos</li>
+            <li>Región: Johto y Paldea</li>
+        </ul>
+    </article>
+    <article class="contenedor_info_extra">
+        <h2 class="subtitulo">DÉBIL CONTRA</h2>
+        <ul class="lista">
+            <li><img src="Icon_TipoLucha.webp" height="10%" width="10%"> <img src="Icon_TipoBicho.webp" height="10%" width="10%"> <img src="Icon_TipoHada.webp" height="10%" width="10%">
+            </li>
+            </ul>
+
+    </article>
+</div>
+
+<div class="imagenes_cartas">
+
+<img class="imagen_carta" src="Umbreon1.png"> 
+<img class="imagen_carta" src="Umbreon2.png"> 
+<img class="imagen_carta" src="Umbreon3.png">
+<img class="imagen_carta" src="Umbreon4.png">
+<img class="imagen_carta" src="Umbreon5.png">
+
+
+
+</div>
+
+<a href="index.html" class="boton-regresar">VOLVER A LA POKÉDEX</a>
+</body>
+</html>
